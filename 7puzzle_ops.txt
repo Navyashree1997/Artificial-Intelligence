@@ -1,0 +1,11 @@
+
+
+(operator
+pegmove
+(params
+   (<a> Object) (<b> Object) (<c> Object))
+(preconds
+   (on <a> <b>) (clear <c>) (nextmove <b> <c>))
+(effects
+   (on <a> <c>) (clear <b>) (del on <a> <b>) (del clear <c>)) )
+

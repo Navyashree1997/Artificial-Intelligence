@@ -1,0 +1,9 @@
+(operator
+ move
+(params
+  (<peg> Object) (<origin> Object) (<dest> Object))
+(preconds
+  (disk <peg> <dest>) (on <peg> <origin>) (clear <peg>) (clear <dest>))
+(effects
+  (del on <peg> <origin>) (clear <origin>) (on <peg> <dest>) (del clear <dest>))
+)
